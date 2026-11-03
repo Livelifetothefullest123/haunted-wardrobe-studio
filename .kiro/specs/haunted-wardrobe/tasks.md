@@ -1,0 +1,21 @@
+# Haunted Wardrobe Studio — Implementation Tasks
+
+- [x] 1. Write the spec: requirements, design, and this task list, before the app code, so the build follows the spec.
+  - Requirements: four pickers, a complete plan for every combination, costs that sum exactly and stay inside the budget band, a sample plan on load, no login/backend, mobile-first readable UI.
+  - _Requirements: Requirement 1, 2, 3, 4, 5, 6_
+- [x] 2. Create the plan data and logic in `app.js`.
+  - Picker lists in requirements order, 20 base plans (5 vibes × 4 occasions), comfort items, deterministic target totals per budget band, largest-remainder cost distribution.
+  - _Requirements: Requirement 2, 3_
+- [x] 3. Create the browser UI in `index.html` and `style.css`.
+  - Picker buttons, plan section with title, main costume, accessories, hair/makeup, DIY note, cost breakdown, total, and tick-off checklist; dark purple/black with orange/gold, mobile-first, 390px media query.
+  - _Requirements: Requirement 1, 5, 6_
+- [x] 4. Preload the sample plan on load.
+  - Default state: Halloween party, Witchy glam, $25-$50, Chilly outdoors; title "Midnight Witch in Velvet", total $42.99.
+  - _Requirements: Requirement 4_
+- [x] 5. Write and run automated tests in `test-wardrobe.js`.
+  - All 180 combinations return a plan, every breakdown sums exactly, every total is inside its band, every plan has a non-empty checklist and all required fields, the sample plan is correct, invalid input returns null.
+  - Fix failures and re-run until all tests pass; also run `node --check app.js`.
+  - _Requirements: Requirement 2, 3, 4_
+- [ ] 6. Steps still pending on the project owner's side (not part of this local build).
+  - Host the app, create the public GitHub repo (with this `.kiro` folder at the root, not gitignored), record a demo video under 3 minutes, upload it to YouTube, and submit on Devpost.
+  - _Requirements: none — submission steps, not app behaviour_
