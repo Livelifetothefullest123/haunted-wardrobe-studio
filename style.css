@@ -1,0 +1,61 @@
+/* Haunted Wardrobe Studio — dark purple/black with orange/gold, mobile-first. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #1a1024;
+  color: #fff8f3;
+  line-height: 1.5;
+}
+header {
+  background: #2b1d27;
+  border-bottom: 4px solid #f59e0b;
+  padding: 28px 20px;
+  text-align: center;
+}
+h1 { margin: 0 0 8px; font-size: 2rem; color: #fbbf24; }
+.tagline { margin: 0 auto; max-width: 640px; color: #e5d5e0; }
+main { max-width: 760px; margin: 0 auto; padding: 20px 16px 40px; }
+h2 { color: #fbbf24; margin-top: 28px; }
+h3 { color: #fda4af; margin-top: 20px; }
+.picker { display: flex; flex-wrap: wrap; gap: 10px; }
+.pick {
+  background: #3b2a3a;
+  color: #fff8f3;
+  border: 2px solid #6b5a63;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.pick:hover, .pick:focus { border-color: #f59e0b; outline: none; }
+.pick.active { background: #f59e0b; color: #1a1024; border-color: #f59e0b; font-weight: 700; }
+.plan {
+  background: #fdf0f3;
+  color: #2b1d27;
+  border-radius: 20px;
+  padding: 22px;
+  margin-top: 28px;
+}
+.plan h2 { color: #7c2d12; margin-top: 0; }
+.plan h3 { color: #9c3656; }
+.meta { color: #6b5a63; }
+.costs { list-style: none; padding: 0; }
+.costs li {
+  display: flex; justify-content: space-between; gap: 16px;
+  padding: 10px 0; border-bottom: 1px solid #e5c8d0;
+}
+.costs li strong { white-space: nowrap; }
+.total { font-size: 1.25rem; font-weight: 800; color: #7c2d12; }
+.hint { color: #6b5a63; }
+.checklist label {
+  display: block; padding: 10px 0; border-bottom: 1px solid #e5c8d0; cursor: pointer;
+}
+.checklist input { width: 20px; height: 20px; accent-color: #9c3656; }
+.how { color: #e5d5e0; }
+footer { text-align: center; padding: 24px 16px; color: #d9c2c8; border-top: 1px solid #3b2a3a; }
+@media (max-width: 390px) {
+  h1 { font-size: 1.6rem; }
+  .pick { padding: 10px 14px; font-size: 0.95rem; }
+  .costs li { flex-direction: column; gap: 2px; }
+}

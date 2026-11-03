@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haunted Wardrobe Studio — Halloween Costume Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎃 Haunted Wardrobe Studio</h1>
+  <p class="tagline">Pick an occasion, a vibe, a budget, and the weather — get a complete Halloween costume plan, made for girls and women.</p>
+</header>
+<main>
+  <section class="pickers" aria-label="Costume pickers">
+    <h2>1. Choose your night</h2>
+    <div class="picker" id="pick-occasion"></div>
+    <h2>2. Choose your vibe</h2>
+    <div class="picker" id="pick-vibe"></div>
+    <h2>3. Choose your budget</h2>
+    <div class="picker" id="pick-budget"></div>
+    <h2>4. Choose your comfort</h2>
+    <div class="picker" id="pick-comfort"></div>
+  </section>
+
+  <section class="plan" aria-live="polite">
+    <h2 id="plan-title">Your costume plan</h2>
+    <p id="plan-meta" class="meta"></p>
+    <h3>Main costume</h3>
+    <p id="plan-main"></p>
+    <h3>Accessories</h3>
+    <ul id="plan-accessories"></ul>
+    <h3>Hair &amp; makeup</h3>
+    <p>Hair: <span id="plan-hair"></span></p>
+    <p>Makeup: <span id="plan-makeup"></span></p>
+    <h3>DIY or buy?</h3>
+    <p id="plan-diy"></p>
+    <h3>Cost breakdown</h3>
+    <ul id="cost-breakdown" class="costs"></ul>
+    <p id="plan-total" class="total"></p>
+    <h3>Tick-off checklist</h3>
+    <p class="hint">Tick items as you gather them. This checklist lives only in this browser session.</p>
+    <div id="checklist" class="checklist"></div>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <p>Every combination of the four pickers returns a real, complete plan. The base costume comes from your vibe and occasion, the cost total is scaled to stay inside your budget band, and a comfort layer is added for warm indoors, chilly outdoors, or rain. Cost breakdowns always sum exactly to the displayed total.</p>
+  </section>
+</main>
+<footer>
+  <p>Haunted Wardrobe Studio — built for Kiroween 2026. MIT License.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
